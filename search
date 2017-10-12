@@ -1,0 +1,9 @@
+fp=open("PoliMorf-0.6.7.tab","r",encoding="utf-8")
+slownik={}
+for line in fp:
+    tmp=line.split("\t")
+    slownik[tmp[0]]=tmp[1]
+    
+while True:
+    search=input("podaj slowo: ")
+    print(slownik[search])
